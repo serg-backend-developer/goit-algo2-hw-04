@@ -6,8 +6,8 @@ class Homework(Trie):
         if not isinstance(pattern, str):
             raise ValueError("Pattern must be a string.")
 
-        count = sum(1 for key in self.keys() if key.endswith(pattern))
-        return count
+        sum_words = sum(1 for key in self.keys() if key.endswith(pattern))
+        return sum_words
 
     def has_prefix(self, prefix) -> bool:
         if not isinstance(prefix, str):
