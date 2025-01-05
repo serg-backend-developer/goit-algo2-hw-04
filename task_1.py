@@ -31,5 +31,3 @@ if __name__ == "__main__":
     assert trie.has_prefix("bat") == False
     assert trie.has_prefix("ban") == True  # banana
     assert trie.has_prefix("ca") == True  # cat
-
-    print("All tests passed!")
